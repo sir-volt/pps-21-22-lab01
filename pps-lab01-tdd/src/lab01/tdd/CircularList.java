@@ -21,14 +21,14 @@ public interface CircularList {
     int size();
 
     /**
-     * Check if the list is empty
+     * Checks if the list is empty
      * @return true if the list is empty, false otherwise
      */
     boolean isEmpty();
 
     /**
      * Provides the next element of the list. Example: having a list like {1,2,3} the first call of next() returns 1,
-     * the second call returns 2, then 3 is returned at the third call. Finally the fourth one return 1 again,
+     * the second call returns 2, then 3 is returned to the third call. Finally, the fourth one return 1 again,
      * because the circular mechanism.
      * @return the next element into the list
      */

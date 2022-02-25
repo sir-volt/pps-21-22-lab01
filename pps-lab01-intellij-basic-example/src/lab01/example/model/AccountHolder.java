@@ -18,7 +18,7 @@ public class AccountHolder {
     }
 
     /**
-     * Retrieve the name of the the person registered as possible account holder
+     * Retrieve the name of the person registered as possible account holder
      * @return the name of the holder
      */
     public String getName() {

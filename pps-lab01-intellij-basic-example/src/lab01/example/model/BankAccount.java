@@ -27,10 +27,10 @@ public interface BankAccount {
     void deposit(int usrID, double amount);
 
     /**
-     * Allows the withdraw of an amount from the account, if the given usrID corresponds to the register holder ID
+     * Allows the withdrawal of an amount from the account, if the given usrID corresponds to the register holder ID
      * of the bank account. This ID acts like an "identification token" .
      *
-     * @param usrID the id of the user that wants do the withdraw
+     * @param usrID the id of the user that wants do the withdrawal
      * @param amount the amount of the withdraw
      */
     void withdraw(int usrID, double amount);
