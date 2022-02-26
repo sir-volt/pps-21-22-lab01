@@ -18,20 +18,20 @@ public interface BankAccount {
     double getBalance();
 
     /**
-     * Allows the deposit of an amount on the account, if the given usrID corresponds to the register holder ID
+     * Allows the deposit of an amount on the account, if the given userID corresponds to the register holder ID
      * of the bank account. This ID acts like an "identification token" .
      *
-     * @param usrID the id of the user that wants do the deposit
+     * @param userID the id of the user that wants do the deposit
      * @param amount the amount of the deposit
      */
-    void deposit(int usrID, double amount);
+    void deposit(int userID, double amount);
 
     /**
-     * Allows the withdrawal of an amount from the account, if the given usrID corresponds to the register holder ID
+     * Allows the withdrawal of an amount from the account, if the given userID corresponds to the register holder ID
      * of the bank account. This ID acts like an "identification token" .
      *
-     * @param usrID the id of the user that wants do the withdrawal
+     * @param userID the id of the user that wants do the withdrawal
      * @param amount the amount of the withdraw
      */
-    void withdraw(int usrID, double amount);
+    void withdraw(int userID, double amount);
 }
