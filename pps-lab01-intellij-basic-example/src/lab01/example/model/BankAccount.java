@@ -31,7 +31,7 @@ public interface BankAccount {
      * of the bank account. This ID acts like an "identification token" .
      *
      * @param userID the id of the user that wants do the withdrawal
-     * @param amount the amount of the withdraw
+     * @param amount the amount of the withdrawal
      */
     void withdraw(int userID, double amount);
 }
