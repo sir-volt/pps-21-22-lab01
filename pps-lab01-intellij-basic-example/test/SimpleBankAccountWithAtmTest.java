@@ -49,5 +49,4 @@ public class SimpleBankAccountWithAtmTest{
         bankAccount.withdrawWithATM(accountHolder.getId(), 70);
         assertEquals(28, bankAccount.getBalance());
     }
-
 }

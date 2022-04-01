@@ -50,5 +50,4 @@ class SimpleBankAccountTest{
         bankAccount.withdraw(2, 70);
         Assertions.assertEquals(100, bankAccount.getBalance());
     }
-
 }
