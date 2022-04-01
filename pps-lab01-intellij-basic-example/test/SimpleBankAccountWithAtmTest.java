@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SimpleBankAccountWithAtmTest extends AbstractBankAccountTest {
 
+    private static final int ATM_FEE = 1;
+
     @Override
     @BeforeEach
     public void beforeEach(){
@@ -16,14 +18,14 @@ public class SimpleBankAccountWithAtmTest extends AbstractBankAccountTest {
 
     @Test
     void testDepositWithATM() {
-        bankAccount.depositWithATM(accountHolder.getId(), 100);
+        bankAccount.deposit(accountHolder.getId(), 100 - ATM_FEE);
         assertEquals(99, bankAccount.getBalance());
     }
 
     @Test
     void testWithdrawWithATM() {
-        bankAccount.depositWithATM(accountHolder.getId(), 100);
-        bankAccount.withdrawWithATM(accountHolder.getId(), 70);
+        bankAccount.deposit(accountHolder.getId(), 100 - ATM_FEE);
+        bankAccount.withdraw(accountHolder.getId(), 70 + ATM_FEE);
         assertEquals(28, bankAccount.getBalance());
     }
 }
