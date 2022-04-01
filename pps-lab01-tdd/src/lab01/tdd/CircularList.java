@@ -51,4 +51,5 @@ public interface CircularList {
      * @return the next element of the list according to the strategy.
      */
     Optional<Integer> next(final SelectStrategy strategy);
+
 }
