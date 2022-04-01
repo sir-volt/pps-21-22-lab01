@@ -14,5 +14,4 @@ class SimpleBankAccountTest extends AbstractBankAccountTest {
         this.accountHolder = new AccountHolder("Mario", "Rossi", 1);
         this.bankAccount = new SimpleBankAccount(accountHolder, 0);
     }
-
 }

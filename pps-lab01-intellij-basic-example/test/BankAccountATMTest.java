@@ -1,4 +1,5 @@
 import lab01.example.model.AccountHolder;
+import lab01.example.model.BankAccount;
 import lab01.example.model.BankAccountATM;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,16 +17,17 @@ public class BankAccountATMTest extends AbstractBankAccountTest {
         bankAccount = new BankAccountATM(accountHolder,0);
     }
 
+    @Override
     @Test
-    void testDepositWithATM() {
-        bankAccount.deposit(accountHolder.getId(), 100 - ATM_FEE);
+    public void testDeposit() {
+        bankAccount.deposit(accountHolder.getId(), 100);
         assertEquals(99, bankAccount.getBalance());
     }
 
     @Test
-    void testWithdrawWithATM() {
-        bankAccount.deposit(accountHolder.getId(), 100 - ATM_FEE);
-        bankAccount.withdraw(accountHolder.getId(), 70 + ATM_FEE);
+    public void testWithdraw() {
+        bankAccount.deposit(accountHolder.getId(), 100);
+        bankAccount.withdraw(accountHolder.getId(), 70);
         assertEquals(28, bankAccount.getBalance());
     }
 }
