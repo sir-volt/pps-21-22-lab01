@@ -1,11 +1,11 @@
 import lab01.example.model.AccountHolder;
-import lab01.example.model.SimpleBankAccountWithAtm;
+import lab01.example.model.BankAccountATM;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class SimpleBankAccountWithAtmTest extends AbstractBankAccountTest {
+public class BankAccountATMTest extends AbstractBankAccountTest {
 
     private static final int ATM_FEE = 1;
 
@@ -13,7 +13,7 @@ public class SimpleBankAccountWithAtmTest extends AbstractBankAccountTest {
     @BeforeEach
     public void beforeEach(){
         accountHolder = new AccountHolder("Luigi","Mario",31);
-        bankAccount = new SimpleBankAccountWithAtm(accountHolder,0);
+        bankAccount = new BankAccountATM(accountHolder,0);
     }
 
     @Test

@@ -1,13 +1,11 @@
 package lab01.example.model;
 
-import lab01.example.model.BankAccount;
-
-public class SimpleBankAccountWithAtm implements BankAccount{
+public class BankAccountATM implements BankAccount{
 
     private double balance;
     private final AccountHolder holder;
 
-    public SimpleBankAccountWithAtm(final AccountHolder holder, final double balance) {
+    public BankAccountATM(final AccountHolder holder, final double balance) {
         this.holder = holder;
         this.balance = balance;
     }
