@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public abstract class BankAccountTest {
+public abstract class AbstractBankAccountTest {
     protected AccountHolder accountHolder;
     protected BankAccount bankAccount;
 
